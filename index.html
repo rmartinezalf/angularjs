@@ -30,10 +30,18 @@
   <br>
   {{cd.resultado}}
   <h4>Ingresa la tabla que quieres</h4>
-  <input type="number" name="" ng-model="tabla">
+  <input type="number" name="" ng-model="tabla">  
   <button ng-click="cd.tmultiplicador(tabla)">Multiplicar</button>
+<br>
+  <br>
+  <br>
+
   Tu tabla es:
-  <div ng-repeat="data in cd.resultado_tabla"> 
+  <br>
+  <br>
+  <br>
+
+  <div class="col-md-4" ng-repeat="data in cd.resultado_tabla"> 
    Multiplicador: {{data.a}} *{{data.b}} = {{data.c}} <br>
   </div>
 
