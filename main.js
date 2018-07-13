@@ -6,16 +6,15 @@ app.controller('ctrlMain', function($scope, rest){
    var dg = this;
 
    dg.resultado = 0;	
-   dg.resultado_tabla = [];
    dg.calcular = function(num1, num2){
       dg.resultado = num1 * num2;
    }	
 
 
+   dg.resultado_tabla = [];
    dg.tmultiplicador = function(numero){
        multiplicador(numero);
    }
-
    function multiplicador(dato){
    	     dg.resultado_tabla = [];
    	     var rango = 10;
